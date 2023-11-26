@@ -4,9 +4,11 @@
 
 Welcome to the Decentralized Verifiable Portfolio (DVP)! This guide will help you understand how to set up and run the application, making the most out of its innovative features.
 
+
 **Overview**
 
 DVP is a cutting-edge platform that allows users to manage and showcase their professional credentials, including academic records, career histories, and project showcases, in a decentralized and verifiable manner. The project integrates blockchain technology, specifically the Polygon Mumbai Testnet, for secure and transparent record-keeping. Additionally, it utilizes IPFS (InterPlanetary File System) for hosting images and React for an interactive user interface.
+
 
 **Prerequisites**
 
@@ -14,6 +16,7 @@ Before you get started, ensure you have the following:
 1. MetaMask Wallet: A digital wallet used to interact with the Ethereum blockchain. Install the MetaMask extension for your browser or mobile app.
 2. Node.js: This is required to run the application locally. Ensure you have the latest version installed.
 3. Git: For cloning the repository from GitHub.
+
 
 **Installation Steps**
 
@@ -33,6 +36,7 @@ Before you get started, ensure you have the following:
      a. Start the application by running npm run dev in the terminal.
      b. Your default web browser should automatically open the application. If not, manually open http://localhost:5173/.
 
+
 **Features and Usage**
 
 1. Digital Wallet Integration: Connect your MetaMask wallet to interact with the application.
@@ -41,11 +45,13 @@ Before you get started, ensure you have the following:
 4. Showcase Gallery: Display your projects with options to add, view, and modify project details.
 5. Social Connects: Quick access to LinkedIn, Discord, and GitHub profiles.
 
+
 **Important Notes**
 
 1. The application is deployed on the Polygon Mumbai Testnet. Ensure you have a small amount of testnet MATIC for transactions.
 2. Images and documents are hosted on IPFS via Pinata, offering decentralized storage solutions.
 3. The website is deployed at 'https://adyworks.netlify.app/'. You can visit this link to see the live application.
+
 
 **Conclusion**
 
