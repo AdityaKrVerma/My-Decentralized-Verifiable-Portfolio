@@ -1,0 +1,61 @@
+.digitalWalletHeader {
+    background-color: #f0f2f5; /* Soft and modern background color */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 3px solid #4caf50; /* Adds a colored border at the bottom for a distinct look */
+}
+
+.connectWalletButton {
+    background-color: #4caf50; /* Vibrant button color */
+    color: white;
+    font-size: 1em;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px; /* Fully rounded button for a modern touch */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-transform: uppercase; /* Uppercase text for a stylish touch */
+    letter-spacing: 1px;
+}
+
+.connectWalletButton:hover {
+    background-color: #388e3c; /* Darker shade on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design for smaller devices */
+@media screen and (max-width: 768px) {
+    .connectWalletButton {
+        padding: 10px 25px;
+        font-size: 0.9em;
+    }
+}
+
+/* Very small devices */
+@media screen and (max-width: 480px) {
+    .digitalWalletHeader {
+        padding: 15px 0;
+    }
+
+    .connectWalletButton {
+        padding: 8px 20px;
+        font-size: 0.8em;
+    }
+}
+
+.metamaskMessage {
+    margin-top: 20px;
+    color: #4caf50;
+    font-size: 1em;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.metamaskMessage:hover {
+    background-color: #e8e8e8; /* Slightly darker background on hover */
+}

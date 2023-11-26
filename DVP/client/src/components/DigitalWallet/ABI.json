@@ -1,0 +1,518 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_period",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_qualification",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_skillsGained",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_institution",
+				"type": "string"
+			}
+		],
+		"name": "addAcademicRecord",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_timeframe",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_role",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_competenciesGained",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_organization",
+				"type": "string"
+			}
+		],
+		"name": "addProfessionalExperience",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_title",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_overview",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_visualRepresentation",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_sourceCodeURL",
+				"type": "string"
+			}
+		],
+		"name": "addShowcase",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_period",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_qualification",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_skillsGained",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_institution",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_identifier",
+				"type": "uint256"
+			}
+		],
+		"name": "modifyAcademicRecord",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_timeframe",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_role",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_competenciesGained",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_organization",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_identifier",
+				"type": "uint256"
+			}
+		],
+		"name": "modifyProfessionalExperience",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_title",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_overview",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_visualRepresentation",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_sourceCodeURL",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_identifier",
+				"type": "uint256"
+			}
+		],
+		"name": "modifyShowcase",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_newBio",
+				"type": "string"
+			}
+		],
+		"name": "updateBio",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_newCVLink",
+				"type": "string"
+			}
+		],
+		"name": "updateCVLink",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_newImageLink",
+				"type": "string"
+			}
+		],
+		"name": "updatePortfolioImage",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "academicHistories",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "identifier",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "period",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "qualification",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "skillsGained",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "institution",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "bio",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "careerHistories",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "identifier",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "timeframe",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "role",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "competenciesGained",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "organization",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "curator",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "curriculumVitaeLink",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "portfolioImage",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "showcases",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "identifier",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "title",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "overview",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "visualRepresentation",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "sourceCodeURL",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "viewAllAcademicRecords",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "identifier",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "period",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "qualification",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "skillsGained",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "institution",
+						"type": "string"
+					}
+				],
+				"internalType": "struct DigitalCredentialLedger.AcademicRecord[3]",
+				"name": "",
+				"type": "tuple[3]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "viewAllCareerHistories",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "identifier",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "timeframe",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "role",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "competenciesGained",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "organization",
+						"type": "string"
+					}
+				],
+				"internalType": "struct DigitalCredentialLedger.ProfessionalExperience[3]",
+				"name": "",
+				"type": "tuple[3]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "viewAllShowcases",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "identifier",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "overview",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "visualRepresentation",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "sourceCodeURL",
+						"type": "string"
+					}
+				],
+				"internalType": "struct DigitalCredentialLedger.WorkShowcase[3]",
+				"name": "",
+				"type": "tuple[3]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

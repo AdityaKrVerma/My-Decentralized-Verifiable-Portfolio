@@ -1,0 +1,230 @@
+.introBanner {
+    background-color: #ffffff;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.bioSection {
+    position: relative;
+}
+
+.bioText {
+    transition: filter 0.3s ease;
+}
+
+.bioSection:hover .bioText {
+    filter: blur(2px);
+}
+
+.updateBioBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bioSection:hover .updateBioBtn {
+    opacity: 1;
+}
+
+.bannerText {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bannerText h1 {
+    font-size: 3em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.bannerText h1:hover {
+    color: #4caf50;
+}
+
+.bannerText h3 {
+    font-size: 1.5em;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.bannerImage .imageContainer {
+    flex: 1;
+    padding: 20px;
+    position: relative; /* Needed for the pseudo-element positioning */
+    display: flex; /* Align image in the center */
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerImage .imageContainer img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 40px 120px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+}
+
+.contactBtn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 25px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-transform: uppercase;
+}
+
+.contactBtn:hover {
+    background-color: #388e3c;
+    transform: translateY(-2px);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.bannerText, .bannerImage {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.bannerText {
+    animation-name: fadeInUp;
+}
+
+.bannerImage {
+    animation-name: fadeInRight;
+}
+
+.bannerImage .imageContainer::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(to bottom, transparent, white 70%, white);
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.spinner {
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-top: 5px solid #4caf50;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blurred {
+    filter: blur(4px);
+}
+
+.overlay {
+    position: relative;
+}
+
+.spinnerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .bannerText, .bannerImage .imageContainer {
+        width: 100%;
+    }
+
+    .bannerText h1 {
+        font-size: 2.5em;
+    }
+
+    .bannerText h3 {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bannerText h1 {
+        font-size: 2em;
+    }
+
+    .bannerText h3 {
+        font-size: 1.2em;
+    }
+}

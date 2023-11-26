@@ -1,0 +1,55 @@
+.skillsetSection {
+    background-color: #ffffff; /* Clean white background */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.sectionTitle {
+    font-size: 2.2em;
+    color: #2c3e50; /* Dark and elegant color */
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.skillIcon {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+    width: 120px; /* Fixed width for consistency */
+}
+
+.skillIcon img {
+    width: 60px; /* Size of the skill icons */
+    height: 60px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+.skillIcon p {
+    font-size: 1em;
+    color: #34495e; /* Subtle and modern text color */
+    margin-top: 5px;
+}
+
+.skillIcon:hover img {
+    transform: scale(1.1); /* Slight increase in size on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .skillIcon {
+        width: 100px; /* Smaller icons on smaller screens */
+        margin: 10px;
+    }
+
+    .skillIcon img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sectionTitle {
+        font-size: 2em;
+    }
+}

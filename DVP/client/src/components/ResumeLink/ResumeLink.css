@@ -1,0 +1,53 @@
+.resumeLinkSection {
+    background-color: #f3f4f6; /* Light background for a fresh look */
+    text-align: center;
+    padding: 70px 0;
+    border-top: 5px solid #4caf50; /* Adds a colored border at the top for a distinct look */
+    border-bottom: 5px solid #4caf50; /* Same colored border at the bottom */
+}
+
+.sectionTitle {
+    font-size: 2em;
+    color: #333; /* Dark color for the title */
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.viewResumeButton {
+    background-color: #4caf50; /* Green color for button to stand out */
+    color: white;
+    font-size: 1.1em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px; /* Rounded corners for the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease;
+    text-transform: uppercase; /* Uppercase text for a modern touch */
+    letter-spacing: 1px; /* Increased letter spacing */
+}
+
+.viewResumeButton:hover {
+    background-color: #388e3c; /* Darker shade on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+    transform: translateY(-2px); /* Small lift effect on hover */
+}
+
+/* Responsive Design for smaller devices */
+@media screen and (max-width: 768px) {
+    .viewResumeButton {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+}
+
+/* Very small devices */
+@media screen and (max-width: 480px) {
+    .sectionTitle {
+        font-size: 1.8em;
+    }
+
+    .viewResumeButton {
+        font-size: 0.9em;
+        padding: 10px 20px;
+    }
+}

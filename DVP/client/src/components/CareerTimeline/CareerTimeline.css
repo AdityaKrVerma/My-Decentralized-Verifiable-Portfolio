@@ -1,0 +1,89 @@
+.careerTimelineSection {
+    background-color: #fdfdfd; /* Light and fresh background color */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.timelineTitle {
+    font-size: 2.5em;
+    color: #333; /* Dark color for the title */
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.timelineContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 20px;
+}
+
+.academicSection,
+.professionalSection {
+    width: 45%; /* Equal width for both sections */
+    background-color: #f8f9fa; /* Slightly different background for contrast */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.sectionTitle {
+    font-size: 1.8em;
+    color: #4caf50; /* Vibrant green color for section titles */
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.timelineCard {
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-left: 4px solid #4caf50; /* Left border for a modern look */
+    position: relative;
+}
+
+.timelineCard .icon {
+    position: absolute;
+    top: 15px;
+    left: -12px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.timelineCard .date {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.timelineCard h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.timelineCard p {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .timelineContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .academicSection, .professionalSection {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .timelineTitle {
+        font-size: 2em;
+    }
+}

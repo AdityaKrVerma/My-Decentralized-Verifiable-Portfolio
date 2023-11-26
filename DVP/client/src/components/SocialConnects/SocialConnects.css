@@ -1,0 +1,74 @@
+.socialConnects {
+    background-color: #f7f7f7;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    border-top: 4px solid #4caf50;
+    border-bottom: 4px solid #4caf50;
+}
+
+.socialConnects .icon {
+    color: #4caf50;
+    margin: 0;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socialConnects .icon:hover {
+    transform: scale(1.1);
+    color: #388e3c;
+}
+
+.socialConnects {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0; /* Ensures the component extends to the right edge without overflowing */
+    background-color: #f8f9fa;
+    padding: 5px 10px; /* Adjust padding as needed */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialConnects .icon {
+    margin: 0 8px;
+    color: #333;
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .socialConnects {
+        gap: 30px;
+    }
+
+    .socialConnects .icon {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .socialConnects {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .socialConnects .icon {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .socialConnects .icon {
+        font-size: 18px;
+    }
+}
