@@ -26,15 +26,15 @@ Before you get started, ensure you have the following:
      c. Run 'git clone https://github.com/AdityaKrVerma/My-Decentralized-Verifiable-Portfolio.git'.
      d. Navigate into the cloned directory: 'cd dvp/client'.
 
-2. Install Dependencies: Inside the project directory, run npm install. This command installs all the necessary packages required by the project.
+2. Install Dependencies: Inside the project directory, run 'npm install'. This command installs all the necessary packages required by the project.
 
 3. Setting Up MetaMask:
      a. Ensure you have MetaMask installed and set up.
      b. Switch to the Polygon Mumbai Testnet in your MetaMask wallet.
 
 4. Run the Application:
-     a. Start the application by running npm run dev in the terminal.
-     b. Your default web browser should automatically open the application. If not, manually open http://localhost:5173/.
+     a. Start the application by running 'npm run dev' in the terminal.
+     b. Your default web browser should automatically open the application. If not, manually open 'http://localhost:5173/'.
 
 
 **Features and Usage**
