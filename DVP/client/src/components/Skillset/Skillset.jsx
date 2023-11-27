@@ -9,8 +9,9 @@ import smartContract from "../../assets/skillset/smart-contract.png";
 import blockchain from "../../assets/skillset/blockchain.png";
 import reactIcon from "../../assets/skillset/react.png";
 import nodeJs from "../../assets/skillset/node-js.svg";
-
+// Skillset component: Displays a set of skills using icons
 const Skillset = () => {
+  // Array of skills with respective icons and alt text
   const skills = [
     { src: solidity, alt: 'Solidity' },
     { src: web3, alt: 'Web3' },

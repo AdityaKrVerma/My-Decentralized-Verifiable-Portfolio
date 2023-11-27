@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
+    /* Define color scheme and fonts for the application */
     --font-family: 'Inter', sans-serif;
     --color-primary: #0066ff;
     --color-secondary: #ff6600;
@@ -12,6 +13,7 @@
 }
 
 * {
+    /* Universal box-sizing and font setting */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,6 +21,7 @@
 }
 
 body {
+    /* Background and text color for the body */
     background-color: var(--color-background);
     color: var(--color-text);
     line-height: 1.6;
@@ -26,25 +29,30 @@ body {
 }
 
 a {
+    /* Default color and styling for hyperlinks */
     color: var(--color-primary);
     text-decoration: none;
 }
 
 a:hover {
+    /* Hover effect for hyperlinks */
     color: var(--color-secondary);
 }
 
 button {
+    /* Styling for buttons */
     font-family: var(--font-family);
     font-size: 1rem;
     cursor: pointer;
 }
 
 .buttonClass, .linkClass {
+    /* Transition effects for buttons and links */
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .buttonClass:hover, .linkClass:hover {
+    /* Hover effect for buttons and links */
     transform: scale(1.05);
     background-color: #007bff;
 }

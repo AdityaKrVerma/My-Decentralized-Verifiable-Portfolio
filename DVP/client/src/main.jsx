@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.css'
-
+// React 18 root rendering method
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />

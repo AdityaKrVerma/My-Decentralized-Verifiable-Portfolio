@@ -4,24 +4,29 @@ import 'aos/dist/aos.css';
 import './CareerTimeline.css';
 import { BsCalendar } from "react-icons/bs";
 
+// Component to display academic and professional career timeline
 const CareerTimeline = ({ state }) => {
+    // State for academic records and career histories
     const [academicRecords, setAcademicRecords] = useState([]);
     const [careerHistories, setCareerHistories] = useState([]);
 
     useEffect(() => {
-        AOS.init(); // Initialize AOS
+        AOS.init(); // Initialize animations on scroll
 
         const { contract } = state;
+        // Fetch academic records from the blockchain
         const fetchAcademicRecords = async () => {
             const records = await contract.methods.viewAllAcademicRecords().call();
             setAcademicRecords(records);
             AOS.refresh(); // Refresh AOS after updating state
         };
+        // Fetch career histories from the blockchain
         const fetchCareerHistories = async () => {
             const histories = await contract.methods.viewAllCareerHistories().call();
             setCareerHistories(histories);
             AOS.refresh(); // Refresh AOS after updating state
         };
+        // Fetch data if contract is available
         contract && fetchAcademicRecords() && fetchCareerHistories();
     }, [state]);
 

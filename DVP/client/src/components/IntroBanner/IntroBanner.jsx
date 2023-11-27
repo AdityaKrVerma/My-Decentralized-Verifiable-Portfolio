@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Modal, ModalBody, ModalHeader, ModalFooter, Button } from "reactstrap";
 import './IntroBanner.css';
-
+// IntroBanner component: Displays the introduction banner including the user's bio and profile image.
 const IntroBanner = ({ state }) => {
+    // State hooks for managing modals, bio, image CID, loading status, and connection status.
     const [bioModal, setBioModal] = useState(false);
     const [contactModal, setContactModal] = useState(false);
     const [bio, setBio] = useState("");
@@ -11,10 +12,12 @@ const IntroBanner = ({ state }) => {
     const [imageCID, setImageCID] = useState("");
     const [isConnected, setIsConnected] = useState(false);
 
+    // useEffect hook: Fetches bio and image CID from the blockchain when the component mounts or state changes.
     useEffect(() => {
         const { contract } = state;
         if (contract) {
             setIsConnected(true);
+            // Functions to fetch bio and image CID from blockchain
             const fetchBio = async () => {
                 const bioText = await contract.methods.bio().call();
                 setBio(bioText);
@@ -30,9 +33,11 @@ const IntroBanner = ({ state }) => {
         }
     }, [state]);
 
+    // Function to toggle the bio update modal.
     const toggleBioModal = () => setBioModal(!bioModal);
+    // Function to toggle the contact info modal.
     const toggleContactModal = () => setContactModal(!contactModal);
-
+    // Function to validate and submit new bio.
     const validateAndSubmitBio = async () => {
         if (newBio.length > 200) {
             alert("Bio must be 200 characters or less.");
@@ -46,6 +51,7 @@ const IntroBanner = ({ state }) => {
         await updateBio();
     };
 
+    // Function to update the bio on the blockchain.
     const updateBio = async () => {
         try {
             const { contract, web3 } = state;
@@ -74,7 +80,7 @@ const IntroBanner = ({ state }) => {
             fetchBio();
         }
     };
-    
+    // Function to fetch the latest bio from the blockchain.
     const fetchBio = async () => {
         try {
             const bioText = await state.contract.methods.bio().call();
@@ -136,6 +142,7 @@ const IntroBanner = ({ state }) => {
                     </Modal>
                 </div>
             </div>
+            {/* Loading spinner */}
             {isLoading && (
                 <div className="spinnerContainer">
                     <div className="spinner"></div>
